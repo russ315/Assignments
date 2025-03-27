@@ -45,4 +45,15 @@ public class Solutions {
         }
         return true;
     }
+
+    /**Problem 4.
+     Time complexity:O(n),where n is the number
+     You are given a number “n”, write the program using recursion for
+     finding “n!”
+     */
+    public static int Factorial(int n){
+        if(n==1 || n==0 )
+            return 1;
+        return n*Factorial(n-1);
+    }
 }
