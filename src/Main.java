@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         double startTime = System.nanoTime();
-        var result = IsAllDigits();
+        var result = BinomialCoefficient();
         double endTime = System.nanoTime();
 
         double duration = (endTime - startTime) / 1000000;
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static boolean IsAllDigits() {
-        return Solutions.IsAllDigits(word,0);
+    private static int BinomialCoefficient() {
+        return Solutions.BinomialCoefficient(7,3);
     }
 }
