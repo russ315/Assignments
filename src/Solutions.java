@@ -93,11 +93,10 @@ public class Solutions {
         ReverseArray(arr, start + 1);
     }
 
-    /**Problem 7.
+    /**Problem 8.
      Time complexity:O(n),where n is the length of string
-     You are given a number “n” and an array of “n” elements,
-     write the program that returns given array in reverse order
-     without using array data structure.
+     You are given a string “s”, write the function for checking
+     whether “s” is all consists of digits
      */
     public static boolean IsAllDigits(String s, int index) {
         if (index == s.length()) return true;
