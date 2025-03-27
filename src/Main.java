@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         double startTime = System.nanoTime();
-        var result = BinomialCoefficient();
+        var result = Gcd();
         double endTime = System.nanoTime();
 
         double duration = (endTime - startTime) / 1000000;
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static int BinomialCoefficient() {
-        return Solutions.BinomialCoefficient(7,3);
+    private static int Gcd() {
+        return Solutions.Gcd(32,48);
     }
 }
