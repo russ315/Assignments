@@ -1,16 +1,16 @@
 
 public class Main {
-    private static final int[] arr = {10,32,3,45,1};
+    private static final int[] arr = {3,2,4,1};
     public static void main(String[] args) {
         double startTime = System.nanoTime();
-        int result = GetMin();
+        var result = GetAverage();
         double endTime = System.nanoTime();
         double duration = (endTime - startTime) / 1000000;
         System.out.println("The result is: "+result);
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static int GetMin() {
-        return Solutions.GetMin(arr,5);
+    private static double GetAverage() {
+        return Solutions.GetAverage(arr,4);
     }
 }
