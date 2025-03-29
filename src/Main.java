@@ -5,16 +5,16 @@ public class Main {
 
     public static void main(String[] args) {
         double startTime = System.nanoTime();
-        ReverseArray();
+        var result = RemoveAllOccurrences();
         double endTime = System.nanoTime();
-
+        System.out.println(result);
         double duration = (endTime - startTime) / 1000000;
 
 
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static void ReverseArray() {
-         Solutions.ReverseArray(5);
+    private static String RemoveAllOccurrences() {
+         return Solutions.RemoveAllOccurrences("pprrqq");
     }
 }

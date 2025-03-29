@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Solutions {
@@ -133,5 +135,25 @@ public class Solutions {
     public static int Gcd(int a, int b) {
         if (b == 0) return a;
         return Gcd(b, a % b);
+    }
+    /*
+    Task 11
+    Given a string,
+    consisting of  lowercase English characters (),
+    remove all the characters that occurred previously in the string.
+    */
+    public static String RemoveAllOccurrences(String s)
+    {
+        HashSet<Character> seen = new HashSet<>();
+        StringBuilder result = new StringBuilder();
+
+        for (char c : s.toCharArray()) {
+            if (!seen.contains(c)) {
+                seen.add(c);
+                result.append(c);
+            }
+        }
+
+        return result.toString();
     }
 }
