@@ -122,7 +122,7 @@ public class Solutions {
         return BinomialCoefficient(n - 1, k - 1) + BinomialCoefficient(n - 1, k);
     }
 
-    /**Problem 9.
+    /**Problem 10.
      Time complexity:O(log(min(a, b)))
      You are given “a” and “b”, write the function for finding
      GCD(a, b) using recursion. (Hint: Euclidean Algorithm)
