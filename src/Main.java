@@ -5,17 +5,16 @@ public class Main {
 
     public static void main(String[] args) {
         double startTime = System.nanoTime();
-        var result = Gcd();
+        ReverseArray();
         double endTime = System.nanoTime();
 
         double duration = (endTime - startTime) / 1000000;
 
-        System.out.println("The result is: " + result );
 
         System.out.println("Time taken:"+ duration+ " milliseconds");
 
     }
-    private static int Gcd() {
-        return Solutions.Gcd(32,48);
+    private static void ReverseArray() {
+         Solutions.ReverseArray(5);
     }
 }

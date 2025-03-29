@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Solutions {
     /**Problem 1.
      * This method calculates the smallest number from given array
@@ -85,12 +87,13 @@ public class Solutions {
      write the program that returns given array in reverse order
      without using array data structure.
      */
-    public static void ReverseArray(int[] arr, int start) {
-        if (start >= arr.length / 2) return;
-        int temp = arr[start];
-        arr[start] = arr[arr.length - start - 1];
-        arr[arr.length - start - 1] = temp;
-        ReverseArray(arr, start + 1);
+    public static void ReverseArray(int n) {
+        if(n == 0)
+            return;
+        var scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        ReverseArray(n-1);
+        System.out.print(number+" ");
     }
 
     /**Problem 8.
